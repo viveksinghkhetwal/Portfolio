@@ -1,0 +1,275 @@
+<!--This experiment is to create a personal website-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .jumbotron{ 
+                height:700px; background-image: url(''); background-color: lightseagreen; 
+                background-position: center; background-size: cover;
+            }
+            .container{
+                padding: 40px 180px;
+                text-align: center;
+                max-width: 100%;
+                color: white;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+            }
+            .container h1{
+                display: inline-block;
+                padding-bottom: 15px;
+                border-bottom: 1px solid white;
+                font-size: 55px;
+                font-weight: 700;
+                text-align: center;
+            }
+            .para{
+                color: gray;
+                font-family:'Times New Roman', Times, serif;
+                font-size: 20px;
+                font-weight:100;
+                padding: 5px 40px;
+                text-align: left;
+            }
+            a{
+                color: darkcyan; font-family: Arial, Helvetica, sans-serif; font-size: medium; padding: 10px;
+            }
+
+            .icons{
+                width: 36px;
+                opacity: 0.6;
+            }
+            .icons:hover{
+                opacity: unset;
+            }
+                
+            h2{
+                padding-bottom: 20px;
+                color: darkcyan;
+                font-size: 45px;
+            }
+            h3{
+                font-size: 32px;
+                text-align: left;
+                margin: auto;
+                padding: 20px 40px;
+                color: lightseagreen;
+            }
+
+            .text{
+                color: darkslategray;
+                text-align: left;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            @media screen and (max-width: 1000px){
+                .container{
+                    width: 95%;
+                    padding: 5px;
+                }
+                .container h1{
+                    font-size: 40px;
+                    font-weight: 700;
+                }
+                .container p{
+                    padding: 5px 10px;
+                }
+            }
+            .topnav{
+                list-style-type: none; overflow: hidden; background-color:#f3f3f3; position: sticky; top: 0; width: 100%;
+            }
+            .topnav a{
+                float: left; display: block; text-align: center; font-family: 'Courier New', Courier, monospace;
+                font-weight: bold; font-size: 18px; padding: 10px 20px;
+            }
+            .topnav a:hover{
+                background-color:teal;
+                color: white;
+            }
+            </style>
+    </head>
+
+
+    <body>
+        <div class="topnav" id="tnav">
+            <a class="nav-link active" id="home-tab" href="Experiment03.html" style="background-color: lightseagreen; color: white;">
+                Home</a>
+            <a class="nav-link" id="profile-tab" href="#profile">Profile</a>
+            <a class="nav-link" id="contact-tab" href="#education" >Education</a>
+            <a class="nav-link" id="contact-tab" href="#skills">Skills</a>
+            <a class="nav-link" id="contact-tab" href="#contact">Contact</a>
+        </div>
+
+        <div class="jumbotron">
+            <div class="container" style="position: relative; top: 25%;">
+                
+                <h1> <span style="font-size: 50px; font-family: 'Courier New', Courier, monospace; font-weight: normal;">
+                    I'm</span> <br> Vivek Singh Khetwal</h1>
+                <p style="font-size: 27px; font-family: 'Courier New', Courier, monospace;">a web developer.</p>
+                
+            </div>
+        </div>
+        
+
+        
+        <div id="profile" class="background-white" style="min-height: 700px; margin: auto;">
+            <div class="container" style="color: unset; max-width: 1200px;">
+                <h2>Profile  <img src="icons/Profile.svg" alt="about" width="70px"> </h2>
+                <hr><br>
+                <div class="row" id="details" style="font-size: large; margin: 20px 50px; text-align: left; color: gray;">
+                    <div class="col-md-6">
+                        <p>
+                            <small class="text">Name</small> Vivek Singh Khetwal
+                        </p>
+                        <p>
+                            <small class="text">Gender </small> Male
+                        </p>
+                        <p>
+                            <small class="text">Age </small> 23 years
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <img src="icons/gmail.svg" alt="email" width="20px">&nbsp;
+                            khetwalviveksingh@gmail.com
+                        </p>
+                        <p>
+                            <img src="icons/Location.svg" alt="address" width="20px">&nbsp;
+                            Air Force Station, Bareilly (UP)
+                        </p>
+                        <p>
+                            <img src="icons/phone.svg" alt="phone" width="20px">
+                            <a href="tel:+917351381531"> +91-7351381531</a>
+                        </p>
+                    </div>    
+                </div>
+                <hr>
+                <br>
+                <div class="row">
+                    <div class="col-md-4" style="margin: auto; padding: 20px; top: 30px;">
+                        <img src="dp.jpg" alt="profile_picture" height="200" width="200" style="border-radius: 50%; padding: 20px;">
+                    </div>
+                    <div class="col-md-8" style="margin: auto; max-width: 650px; float:right;">
+                        <h3>About Me</h3>
+                        <p class="para">I'm a Web Developer, currently a student of MCA at
+                            <a href="https://www.gbpuat.ac.in" target="_blank" style="padding: 0; color: lightseagreen;">G B Pant University of Agriculture and Technology.</a> <br>
+                            I like computer programming. 
+                            In my UG as PG programme i had learned some programming languages - C, JAVA, Python and JavaScript. 
+                            Also, i have good knowledge of these programming languages. <br> 
+                            Currently i'm working on Web development. 
+                            I had learned some backend frameworks using the Python programming language. 
+                            I would love to apply my skills for creating the softwares for customers either independently or by joining a software company.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+
+        <div id="education" class="background-white" style="min-height: 700px;">
+            <div class="container" style="color: unset; max-width: 1100px;">
+                <img src="" alt=""> 
+                <h2>Education  <img src="icons/Education.svg" alt="education" width="70px"></h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3>Went to</h3>
+                            <ul class="para">
+                                <li>
+                                    <span class="text">Govind Ballabh Pant University of Agriculture and Technology, Pantnagar-</span><br>
+                                    for Master of Computer Applications in <br><span class="text">Year</span> 2018.
+                                </li><br>
+                                <li>
+                                    <span class="text">Invertis University, Bareilly-</span><br>
+                                    for Bachelor of Computer Applications in <br><span class="text">Year</span> 2015.
+                                </li><br>
+                                <li>
+                                    <span class="text">Madhavrao Scindia Public School, Bareilly-</span><br>
+                                    for Intermediate in <br><span class="text">Year</span> 2013.
+                                </li><br>
+                                <li>
+                                    <span class="text">Army Public School, Bareilly Cantt-</span><br>
+                                    for High School.
+                                </li><br>
+                            </ul>
+                    </div>
+                    <div class="col-md-4" style="margin: auto; padding: 20px; top: 30px;">
+                        <img src="Graduate-male.png" alt="education" width="200" style="border-radius: 50%; padding: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="skills" class="background-white" style="min-height: 700px;">
+            <div class="container" style="max-width: 1100px;">
+                <h2>Skills <img src="icons/Skills-small.svg" alt="skills" width="70px"></h2> 
+                <hr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Technical</h3>
+                        <ul class="para" type="none">
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C Programming</li>
+                            <li>JavaScript</li>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>MySQL</li>
+                            <li>PostgreSQL</li>
+                            <li>Flask</li>
+                            <li>Django</li>
+                            <li>Git/Github</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4" style="margin: auto; padding: 20px; top: 30px;">
+                        <img src="icons/Skills.svg" alt="skills" width="300" style="border-radius: 50%; padding: 20px;">
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Languages</h3>
+                        <ul class="para" type="none">
+                            <li>Hindi</li>
+                            <li>English</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div id="contact" style="background-color: lightgray;">
+            <div class="container" style="padding-top: 80px;">
+                <p style="font-size: 18px; font-weight: bold; color: black; ">FOLLOW ON</p>
+                <a href="https://www.linkedin.com/in/vivek-singh-khetwal" target="_blank">
+                    <img class="icons" src="icons/linkedin.svg" alt="linkedin">
+                </a>
+                <a href="https://github.com/viveksinghkhetwal" target="_blank">
+                    <img class="icons" src="icons/github.svg" alt="github">
+                </a>
+                <a href="https://twitter.com/khetwal_vivek?s=08" target="_blank">
+                    <img class="icons" src="icons/twitter.svg" alt="twitter">
+                </a>
+                <a href="https://www.instagram.com/invites/contact/?i=q1esaunp0yf9&utm_content=yetynu" target="_blank">
+                    <img class="icons" src="icons/instagram.svg" alt="instagram">
+                </a>
+                
+                <a href="https://www.facebook.com/vivek.khetwal1" target="_blank">
+                    <img class="icons" src="icons/facebook.svg" alt="facebook">
+                </a><br><br><br><br>
+                <small style=" margin: auto; color: darkslategray;"> copyright
+                    <a href="file:///D:/study/MCA/4th%20sem/eCommerce/practical/Experiment03.html" 
+                    style="font-size: 14px; padding: 0; color: darkslategray;">
+                        <img src="icons/copyright.svg" alt="copyright" width="16px">
+                        <u> Vivek Singh Khetwal</u></a>
+                </small>
+            </div>
+        </div>
+        
+    </body>
+</html>
